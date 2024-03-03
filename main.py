@@ -6,7 +6,7 @@ import smtplib
 
 load_dotenv()
 
-amazon_endpoint = "https://www.amazon.com/Instant-Pot-Electric-Sterilizer-Stainless/dp/B09MZTP44L/ref=pd_rhf_ee_s_pd_sbs_rvi_d_sccl_1_2/138-1856029-6007022?pd_rd_w=t8SUr&content-id=amzn1.sym.a089f039-4dde-401a-9041-8b534ae99e65&pf_rd_p=a089f039-4dde-401a-9041-8b534ae99e65&pf_rd_r=DDNBM2FYK7YVHFPX2V6G&pd_rd_wg=VRevy&pd_rd_r=2b6b844d-c1e0-4f47-a073-4afd4b281838&pd_rd_i=B09MZTP44L&th=1"
+amazon_endpoint = input("Copy paste the url of your wish list product here: ")
 connection = requests.get(url=amazon_endpoint)
 print(connection.status_code)
 page = connection.text
